@@ -731,6 +731,19 @@ header .container {
   border-radius: 50%;
   background-color: var(--main-white-color);
 }
+.data-modal-close {
+  border: 1px solid #0000001a;
+  outline: none;
+}
+.icon-close {
+  transition: fill 250ms var(--timing-function);
+}
+
+.modal-close:hover .icon-close,
+.modal-close:focus .icon-close {
+  fill: var(--accent-color);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -766,10 +779,28 @@ header .container {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+  transition: border 250ms var(--timing-function);
 }
 .modal-comment {
   width: 448px;
-  margin-top: 4px;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border 250ms var(--timing-function);
+}
+.modal-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-comment:hover,
+.modal-comment:focus {
+  border: 1px solid var(--accent-color);
 }
 .modal-group {
   margin-top: 4px;
@@ -784,4 +815,54 @@ header .container {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms var(--timing-function);
+}
+.main-modal-input:hover,
+.main-modal-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.main-modal-input:hover + .icons-modal-input,
+.main-modal-input:focus + .icons-modal-input {
+  fill: var(--accent-color);
+}
+.modal-politic-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-p-color);
+}
+.modal-politic-label::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--main-h-color);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.modal-politic-check:checked + label::before {
+  border: none;
+  background-color: var(--accent-color);
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal-politic-link {
+  margin-left: 8px;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.modal-container > div:nth-child(5) {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.main-btn-modal {
+  border-radius: 4px;
+  padding: 10px 52px;
 }
