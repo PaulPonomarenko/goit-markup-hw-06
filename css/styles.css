@@ -746,11 +746,12 @@ header .container {
 
   color: var(--second-link-color);
 }
-.main-modal-container {
+.main-modal-form {
   margin: 12px 40px auto;
 }
 .main-modal-lable {
   display: flex;
+  margin-bottom: 4px;
 
   font-weight: 400;
   font-size: 12px;
@@ -762,12 +763,25 @@ header .container {
 .main-modal-input {
   width: 100%;
   height: 40px;
-  margin-top: 4px;
-  margin-bottom: 10px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 .modal-comment {
   width: 448px;
   margin-top: 4px;
+}
+.modal-group {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.modal-cont {
+  position: relative;
+}
+.icons-modal-input {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 }
