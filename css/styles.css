@@ -736,3 +736,38 @@ header .container {
   visibility: hidden;
   pointer-events: none;
 }
+.modal-title {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--second-link-color);
+}
+.main-modal-container {
+  margin: 12px 40px auto;
+}
+.main-modal-lable {
+  display: flex;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--main-link-color);
+}
+.main-modal-input {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-comment {
+  width: 448px;
+  margin-top: 4px;
+}

@@ -419,6 +419,27 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form action="" class="main-modal-form"></form>
+          <div class="main-modal-container">
+            <label for="user_name" class="main-modal-lable">Ім'я</label>
+            <input type="text" class="main-modal-input" id="user_name" name="user_name" required   />
+            <label for="tel" class="main-modal-lable">Телефон</label>
+            <input
+              type="tel"
+              class="main-modal-input"
+              id="tel"
+              name="tel"
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              required
+            />
+            <label for="user_email" class="main-modal-lable">Пошта</label>
+            <input type="email" class="main-modal-input" name="user_email" id="user_email" required />
+            <label for="textarea" class="main-modal-lable">Коментар</label>
+            <textarea name="comment" class="modal-comment" id="textarea" rows="10" placeholder="Введіть текст"></textarea>
+            <button type="submit">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
